@@ -1,0 +1,34 @@
+<script>
+    function Person(name, age) {
+        this.myName = name;
+        this.myAge = age;
+    }
+
+    var per1 = new Person("Han", 20);
+    console.log(per1.myName);
+    console.log(per1.myAge);
+</script>
+
+<script>
+    function Car(name) {
+        this.name = name;
+        this.speed = 0;
+        this.getName = function() {return this.name;}
+        this.getSpeed = function() {return this.speed;}
+        this.accelerate = function() {
+            this.speed = this.speed + 10;
+        }
+        this.decelerate = function() {
+            this.speed = this.speed - 10;
+        }
+    }
+
+    var car1 = new Car("ferrari");
+    console.log(car1.getSpeed());
+    car1.accelerate();
+    console.log(car1.getSpeed());
+    car1.accelerate();
+    console.log(car1.getSpeed());
+    car1.accelerate();
+    console.log(car1.getSpeed());
+</script>

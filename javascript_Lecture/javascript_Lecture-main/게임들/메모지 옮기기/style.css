@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    display: flex;
+}
+
+#create{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.items {
+    width: 50px;
+    height: 50px;
+    background-color: beige;
+    border: 1px solid black;
+    position: absolute;
+}
+
+#delete {
+    border: 1px solid black;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}

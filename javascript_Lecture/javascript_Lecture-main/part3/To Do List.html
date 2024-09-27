@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="container">
+        <h1>To Do List</h1>
+        <p>할 일을 기록해보세요</p>
+        <form action="">
+            <input id="task" type="text" autofocus>
+            <button onclick="newTask();return false">추가</button>
+        </form>
+        <ul id="taskList"></ul>
+    </div>
+</body>
+
+<style>
+    *  {
+        box-sizing: border-box;
+    }
+    #container {
+        width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    input[type="text"] {
+        width: 370px;
+        float: left;
+        height: 30px;
+        padding-left: 30px;
+    }
+    button {
+        width: 90px;
+        height: 30px;
+        float: right;
+    }
+    ul {
+        list-style: none;
+        padding-top: 30px;
+    }
+</style>
+
+<script>
+    var task = document.querySelector("#task");
+    var taskList = document.querySelector("#taskList");
+
+    function newTask() {
+        var newTask = document.createElement("li");
+        var newText = document.createTextNode(task.value);
+        newTask.appendChild(newText);
+
+        taskList.appendChild(newTask);
+        task.value = "";
+
+        function newTask() {
+            taskList.appendChild(newTask);
+            task.value = "";
+            var tasks = document.querySelectorAll("li");
+            for(let i=0; i<tasks.length; i++) {
+                tasks[i].addEventListener("click", function() {
+                    if (this.parentNode) {
+                        this,parentNode.removeChild(this);
+                    }
+                })
+            }
+        }
+    }
+</script>
+
+
+</html>

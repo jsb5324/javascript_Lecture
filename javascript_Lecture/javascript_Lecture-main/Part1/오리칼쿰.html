@@ -1,0 +1,26 @@
+<h2>성적 확인</h2>
+
+<script>
+    var score = 78;
+    var lecture = "english";
+
+    if (lecture == "sports") {
+        if (score > 70) {
+            document.write("성적 : pass");
+        } else {
+            document.write("성적 : fail");
+        }
+    } else {
+        if (score >= 90) {
+            document.write("성적 : A");
+        } else if (score >= 80) {
+            document.write("성적 : B")
+        } else if (score >= 70) {
+            document.write("성적 : C")
+        } else if (score >= 60) {
+            document.write("성적 : D")
+        } else if (score >= 50) {
+            document.write("성적 : F")
+        }
+    }
+</script>

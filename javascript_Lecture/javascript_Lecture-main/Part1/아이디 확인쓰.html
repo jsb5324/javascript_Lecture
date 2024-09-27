@@ -1,0 +1,19 @@
+<h2>아이디 확인하기</h2>
+
+<script>
+    var id = "asdf"
+    var pw = 1234
+    var userID, userPW;
+
+    userID = prompt("ID를 입력해주세요");
+    if(userID == id) {
+        userPW = prompt("PW를 입력해주세요");
+        if(userPW == pw) {
+            document.write("<h4>환영합니다</h4>");
+        } else {
+            document.write("<h4>존재하지 않는 비밀번호입니다,</h4>");
+        }
+    } else {
+        document.write("<h4>존재하지 않는 아이디입니다</h4>");
+    }
+</script>

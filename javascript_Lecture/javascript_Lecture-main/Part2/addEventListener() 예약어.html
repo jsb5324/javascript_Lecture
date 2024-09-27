@@ -1,0 +1,14 @@
+<div id="Peepe">
+    <img src="Pepe.jpg" id="frog" width="500" height="400">
+</div>
+
+<script>
+    var frog = document.querySelector("#frog");
+    frog.addEventListener("mouseover", changePic);
+    frog.addEventListener("mouseout", originPic);
+    function changePic() {
+        frog.src = "pepe P.jpg";    }
+    function originPic() {
+        frog.src = "Pepe.jpg";    }
+    
+</script>

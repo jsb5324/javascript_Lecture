@@ -1,0 +1,17 @@
+<div id="Pepe">
+    <img src="Pepe.jpg" alt="폐폐" id="Pepe" onclick="displaySrc()"> 
+</div>
+<button id="change" onclick="changeSrc()">click</button>
+
+<script>
+    var frog = document.querySelector("#Pepe");
+    function displaySrc() {
+        alert("이미지 소스 : "+frog.getAttribute("src"));
+    function changeSrc() {
+        frog.setAttribute("src", "Pepe.jpg")
+        }
+        function changeSrc() {
+            frog.setAttribute("src", "pepe P.jpg")
+        }
+    }
+</script>

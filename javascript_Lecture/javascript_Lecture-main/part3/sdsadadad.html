@@ -1,0 +1,18 @@
+<div id="container">
+    <h1>문자열을 입력하세요</h1>
+    <input type="text" id="inputTxt" width="50vw" height="10vh">
+    <button id="sumbit">Click</button>
+    <div id="printTxt"></div>
+</div>
+
+<script>
+    inputTxt = document.querySelector("#inputTxt");
+    printTxt = document.querySelector("#printTxt");
+    submitBtn = document.querySelector("#sumbit");
+    submitBtn.addEventListener("click", function() {
+        let newNode = document.createElement("p");
+        let newText = document.createTextNode(inputTxt.value);
+        newNode.appendChild(newText);
+        printTxt.appendChild(newNode);
+    })
+</script>

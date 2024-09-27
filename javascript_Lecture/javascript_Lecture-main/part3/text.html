@@ -1,0 +1,13 @@
+<div id="container">
+    <h1>Dom</h1>
+    <a href="#" onclick="addP(); this.onclick='';">더보기</a>
+    <div id="info"></div>
+</div>
+<script>
+    function addP() {
+    var newP = document.createElement("p");
+    var txtNode = document.createTextNode("Helloq World")
+    newP.appendChildOt(txtNode);
+    document.getElementById("info").appendChild(newP)
+    }
+</script>

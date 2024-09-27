@@ -1,0 +1,13 @@
+<button onclick="inText()">innerText로 표시하기</button>
+<button onclick="inHTML()">innerText로 표시하기</button>
+<h1>현재 시각</h1>
+<div id="cur"></div>
+<script>
+    var now = new Date();
+    function inText() {
+        document.getElementById("cur").innerText = "<em>" + now + "</em>"
+    }
+    function inHTML() {
+        document.getElementById("cur").innerHTML = now
+    }
+</script>
